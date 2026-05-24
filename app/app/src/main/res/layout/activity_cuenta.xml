@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F2F2F7">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cuenta"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#111111" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Información del usuario conectado"
+                    android:textSize="16sp"
+                    android:textColor="#6E6E73"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="24dp" />
+
+            <TableLayout
+                    android:id="@+id/accountTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_home_card"
+                    android:elevation="8dp"
+                    android:padding="18dp"
+                    android:stretchColumns="0,1" />
+
+            <TextView
+                    android:id="@+id/logoutButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cerrar sesión"
+                    android:textColor="#D32F2F"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="28dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="14dp">
+
+        <include layout="@layout/bottom_navigation" />
+
+    </FrameLayout>
+
+</LinearLayout>

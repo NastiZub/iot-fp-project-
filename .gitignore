@@ -1,0 +1,15 @@
+# Android
+.gradle/
+.idea/
+local.properties
+build/
+*.iml
+
+# Backend
+target/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log

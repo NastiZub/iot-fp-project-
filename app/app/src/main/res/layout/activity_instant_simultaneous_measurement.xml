@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F4FB">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_back"
+                    android:contentDescription="Back"
+                    android:elevation="10dp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medición simultánea"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#2B2233"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccione varios sensores para obtener mediciones puntuales."
+                android:textSize="15sp"
+                android:textColor="#6F6478"
+                android:layout_marginBottom="24dp" />
+
+            <CheckBox android:id="@+id/temperatureCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Temperature Sensor (°C)" />
+            <CheckBox android:id="@+id/humidityCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Humidity Sensor (%)" />
+            <CheckBox android:id="@+id/pressureCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pressure Sensor (hPa)" />
+            <CheckBox android:id="@+id/lightCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Light Sensor (lux)" />
+            <CheckBox android:id="@+id/distanceCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Distance Sensor (cm)" />
+            <CheckBox android:id="@+id/speedCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Speed Sensor (m/s)" />
+            <CheckBox android:id="@+id/accelerationCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Acceleration Sensor (m/s²)" />
+            <CheckBox android:id="@+id/gyroscopeCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gyroscope Sensor (deg/s)" />
+            <CheckBox android:id="@+id/currentCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current Sensor (A)" />
+            <CheckBox android:id="@+id/voltageCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Voltage Sensor (V)" />
+            <CheckBox android:id="@+id/powerCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Power Sensor (W)" />
+            <CheckBox android:id="@+id/gasCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gas Sensor (ppm)" />
+
+            <Button
+                android:id="@+id/measureSimultaneousButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Realizar medición"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:id="@+id/resultsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultados aparecerán aquí"
+                android:textSize="18sp"
+                android:textColor="#4A235A"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="14dp">
+
+        <include layout="@layout/bottom_navigation" />
+
+    </FrameLayout>
+
+</LinearLayout>

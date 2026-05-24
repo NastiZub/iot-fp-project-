@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_bottom_island"
+        android:elevation="10dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+
+    <LinearLayout
+            android:id="@+id/bottomHistoryButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_history" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Historial"
+                android:textSize="12sp"
+                android:fontFamily="sans"
+                android:textColor="#4A235A" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/bottomHomeButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_home" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicio"
+                android:textSize="12sp"
+                android:fontFamily="sans"
+                android:textColor="#4A235A" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/bottomAccountButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_account" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuenta"
+                android:textSize="12sp"
+                android:fontFamily="sans"
+                android:textColor="#4A235A" />
+    </LinearLayout>
+
+
+</LinearLayout>

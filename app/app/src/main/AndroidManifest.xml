@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+            android:allowBackup="true"
+            android:dataExtractionRules="@xml/data_extraction_rules"
+            android:fullBackupContent="@xml/backup_rules"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.IoTApp"
+            android:usesCleartextTraffic="true">
+        <activity
+                android:name=".ui.screens.CuentaActivity"
+                android:exported="false" />
+        <activity
+                android:name=".model.CuentaActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.HistoryDetailActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.HistoryActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.RfidActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.UsersActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.RegisterActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.ContinuousSimultaneousMeasurementActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.ContinuousIndividualMeasurementActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.InstantSimultaneousMeasurementActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.InstantIndividualMeasurementActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.HomeActivity"
+                android:exported="false" />
+        <activity
+                android:name=".ui.screens.LoginActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
